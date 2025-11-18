@@ -45,8 +45,4 @@ public class AnalyticsCounter {
     public void writeSymptoms(Map<String, Integer> symptoms) {
         writer.writeSymptoms(symptoms);
     }
-
-    public static void main(String[] args) {
-
-    }
 }

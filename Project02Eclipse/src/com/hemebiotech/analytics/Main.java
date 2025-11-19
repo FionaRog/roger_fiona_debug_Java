@@ -3,7 +3,20 @@ package com.hemebiotech.analytics;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * The Main class runs the process described in Analytics counter:
+ *      Reading symptoms from a data source
+ *      Counting the number of occurrences of each symptom
+ *      Sorting symptoms alphabetically
+ *      Writting results to an output file
+ */
 public class Main {
+
+    /**
+     * Execution method.
+     * Instantiates the required components and runs the full analysis
+     * @param args unused
+     */
     public static void main(String[] args) {
         ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
         ISymptomWriter writer = new WriteSymptomDataToFile("result.out");

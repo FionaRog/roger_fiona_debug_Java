@@ -21,7 +21,12 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	public ReadSymptomDataFromFile (String filePath) {
 		this.filePath = filePath;
 	}
-	
+
+    /**
+     * Reads symptoms from the configured file.
+     *
+     * @return a list of symptoms that can duplicates symptoms; return an empty list if file not found.
+     */
 	@Override
 	public List<String> getSymptoms() {
 		List<String> result = new ArrayList<String>();

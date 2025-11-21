@@ -1,4 +1,4 @@
-package com.hemebiotech.analytics;
+package com.hemebiotech.analytics.writer;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -10,7 +10,7 @@ import java.util.Map;
  * The file contains Symptoms and their occurences , one line per symptom, in the format:
  *      symptom: count
  */
-public class WriteSymptomDataToFile implements ISymptomWriter{
+public class WriteSymptomDataToFile implements ISymptomWriter {
 
     private String filePath;
 
